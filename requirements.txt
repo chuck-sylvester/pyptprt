@@ -1,0 +1,41 @@
+# -----------------------------------------------------------
+# Patient Portal — Application and Development Dependencies
+# -----------------------------------------------------------
+
+# FastAPI application and development server
+fastapi==0.162.0
+uvicorn[standard]==0.54.0
+
+# Templates and HTML form handling
+Jinja2==3.1.6
+python-multipart==0.0.33
+
+# Validation and environment-based settings
+pydantic==2.14.2
+pydantic-settings==2.16.2
+
+# PostgreSQL access and database migrations
+SQLAlchemy==2.0.55
+psycopg[binary]==3.3.6
+alembic==1.20.1
+
+# HTTP client for FHIR server integration
+httpx==0.28.1
+
+# OAuth2/OIDC client integration
+Authlib==1.9.1
+
+# Signed cookie sessions for Starlette SessionMiddleware
+itsdangerous==2.2.0
+
+# Automated testing
+pytest==8.4.2
+pytest-cov==7.1.0
+pytest-asyncio==0.25.0
+
+# Code formatting and linting
+ruff==0.17.3
+
+# FHIR R4 integration uses HTTPX and application-specific Pydantic models.
+# No FHIR resource-modeling library (e.g., fhir.resources) is required initially.
+# Revisit if broader resource modeling or validation becomes necessary.
