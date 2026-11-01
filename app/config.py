@@ -15,5 +15,11 @@ class Settings(BaseSettings):
 
     # Application
     app_name: str = "Python Patient Portal"
-    app_version: str = 
+    app_version: str = "0.1.0"
+    app_environment: str = "development"
 
+    # Logging
+    log_level: str = "INFO"
+
+# Module-level singleton - instantiated once when module is first imported
+settings = Settings()
